@@ -20,14 +20,14 @@ spec:
         post.hook.backup.velero.io/command: '["/bin/bash", "-c", "echo after_backup > /tmp/after_backup.txt"]'
     spec:
       containers:
-      - image: bitnami/mongodb:5.0.14
+      - image: mongo:5.0.14
         name: mongo
         ports:
         - name: mongo
           containerPort: 27017
         volumeMounts:
           - name: mongo-db
-            mountPath: /bitnami/mongodb/data/db
+            mountPath: /data/db
       volumes:
         - name: mongo-db
           persistentVolumeClaim:
