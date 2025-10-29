@@ -4,7 +4,7 @@ metadata:
   name: cluster
   namespace: openshift-gitops
 spec:
-  description: Project for managing OpenShift cluster GitOps resources
+  description: ArgoCD Project for managing OpenShift cluster GitOps resources
   sourceRepos:
     - '*'
   destinations:
