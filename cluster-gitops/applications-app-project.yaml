@@ -3,7 +3,7 @@ kind: AppProject
 metadata:
   name: applications
 spec:
-  description: Project for managing OpenShift applications GitOps resources
+  description: Project for managing Applications GitOps resources
   sourceRepos:
     - '*'
   destinations:
