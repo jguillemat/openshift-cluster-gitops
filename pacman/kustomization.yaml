@@ -3,10 +3,10 @@ kind: Kustomization
 metadata:
   name: pacman
 resources:
-- namespace.yaml
-- mongo-pvc.yaml
-- mongo-deployment.yaml
-- mongo-service.yaml
-- pacman-deployment.yaml
-- pacman-service.yaml
-- pacman-route.yaml
+  - namespace.yaml
+  - mongo-pvc.yaml
+  - mongo-deployment.yaml
+  - mongo-service.yaml
+  - pacman-deployment.yaml
+  - pacman-service.yaml
+  - pacman-route.yaml
