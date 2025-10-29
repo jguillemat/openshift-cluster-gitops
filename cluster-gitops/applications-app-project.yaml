@@ -2,8 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: applications
+  namespace: openshift-gitops
 spec:
-  description: Project for managing Applications GitOps resources
+  description: ArgoCD Project for managing Applications GitOps resources
   sourceRepos:
     - '*'
   destinations:
