@@ -13,7 +13,7 @@ spec:
     path: pacman
   destination:
     server: https://kubernetes.default.svc
-    namespace: cluster-gitops
+    namespace: pacman-gitops
   syncPolicy:
     automated:
       prune: true
