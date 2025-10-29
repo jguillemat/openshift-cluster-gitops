@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: todo-app
-  namespace: cluster-gitops
+  namespace: openshift-gitops
 spec:
   project: applications
   destination:
