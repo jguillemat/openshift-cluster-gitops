@@ -1,3 +1,4 @@
+namespace: pacman-gitops
 resources:
 - namespace.yaml
 - mongo-pvc.yaml
