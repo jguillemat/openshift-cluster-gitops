@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: todo-app
+  namespace: cluster-gitops
+spec:
+  project: applications
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: todo
+  source:
+    repoURL: https://github.com/RedHat-EMEA-SSA-Team/ns-apps
+    targetRevision: app-syncwaves
+    path: apps/todo
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
