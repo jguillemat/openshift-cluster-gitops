@@ -1,6 +1,6 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: pacman-gitops
+  bame: pacman-gitops
   labels:
-    openshift.io/cluster-monitoring: "true" 
+    openshift.io/cluster-monitoring: "true"
