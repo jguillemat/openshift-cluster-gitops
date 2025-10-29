@@ -8,7 +8,7 @@ metadata:
 spec:
   project: cluster
   source:
-    repoURL: https://github.com/stephennimmo/openshift-cluster-gitops.git
+    repoURL: https://github.com/jguillemat/openshift-cluster-gitops.git
     targetRevision: main
     path: openshift-gitops-operator
   destination:
